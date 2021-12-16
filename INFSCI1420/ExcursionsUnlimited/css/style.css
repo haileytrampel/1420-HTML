@@ -58,12 +58,10 @@ li a {
   }
   nav{
     display: flex;
-    justify-content: center;
     align-items:center;
   }
   .menu{
     display:inline-block;
-    float:right;
     max-height:30%;
     margin-right:0.3em;
   }
@@ -250,6 +248,10 @@ form{
   margin-top: 0em;
 }
 
+.column2{
+  margin:0 3em 2em 3em;
+}
+
 input[type="text"]{
   width: 25em;
   height: 4em;
@@ -276,7 +278,7 @@ button[type="submit"]{
   .row{
     display:block;
   }
-  .column {
+  .column, .column2 {
     flex: 50%;
     margin:1.5em;
     margin-top: 0em;
