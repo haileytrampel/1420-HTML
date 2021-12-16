@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap');
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+}
+
+
+header{
+  color: white;
+  background-color: #148DB3;
+  height:8em;
+  display:flex;
+}
+
+h1{
+  font-family: 'Passion One', cursive; /*need to fix*/
+  float:left;
+  font-size:300%;
+  padding-left:1em;
+  flex:1;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  float:right;
+  font-size:2em;
+}
+
+.menu{
+  display:none;
+}
+
+/* Responsive for Header*/
+@media screen and (max-width: 400px){
+  h1 > img{
+    float:left;
+    max-height:100%;
+    margin-right:
+  }
+  .menu{
+    display:inline-block;
+    float:right;
+    max-height:70%;
+  }
+  h1{
+    font-size:250%;
+    max-width:100%;
+    text-align:center;
+    max-height:100%;
+    padding: 0.3em;
+  }
+  nav{
+    display: none;
+  }
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  background-color: #DEE8F4;
+  padding: 2em;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero >img {
+  max-width:100%;
+}
+
+@media screen and (max-width: 400px){
+  .hero > img{
+    max-width: 50%;
+  }
+}
+
+.dest {
+  background-color: #8A2C2D;
+  padding: 0.3em;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin:0em;
+  padding:1em;
+  font-size:2em;
+}
+
+.float-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.float-child1 {
+  width: 25%;
+  float: left;
+  background-color: white;
+  border: 0.2em solid #8A2C2D;
+  padding-bottom: 0.5em;
+}
+
+
+.dest-image{
+  width:100%;
+  margin-bottom: -0.5em;
+  padding: 0em;
+}
+
+.when-flex{
+  margin:0;
+  padding:0;
+}
+
+
+h3{
+  font-size: 2em;
+  background-color: #DEE8F4;
+  padding: 0.5em;
+  margin-top:0em;
+  padding-left:0.5em;
+}
+
+.descrip {
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+.red {
+  background-color: #8A2C2D;
+}
+
+.blue {
+  background-color: #148DB3;
+
+}
+
+.buttons > a {
+  font-size: 1.2em;
+  color: white;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 1em;
+  width:7em;
+}
+
+.buttons{
+  margin:1em;
+  float:left;
+  display:flex;
+  flex-direction:row;
+}
+
+/* Responsive for Destination Section */
+@media screen and (max-width: 480px){
+  .float-container{
+    flex-direction: column;
+  }
+  .float-child1 {
+    width: 100%;
+    background-color: white;
+    border: 0.2em solid #8A2C2D;
+    padding-bottom: 0.5em;
+  }
+
+  .descrip{
+    margin:1em;
+  }
+
+  .dest-image{
+    width:100%;
+    height:140px;
+    object-fit:none;
+    overflow:hidden;
+  }
+  h3{
+    background-color: white;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+  .when-flex{
+    display: inline-block;
+    width:70%
+  }
+  .image-float{
+    width:30%;
+    float:left;
+    padding-bottom:-5px;
+  }
+}
+
+
+.form {
+  background-color: #148DB3;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size:1.5em;
+  align-items: center;
+}
+
+form{
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin:3em;
+  margin-top: 0em;
+}
+
+input[type="text"]{
+  width: 25em;
+  height: 4em;
+}
+
+input[type="checkbox"]{
+  margin-right:1.5em;
+}
+
+button[type="submit"]{
+  border:none;
+  background-color:#8A2C2D;
+  color:white;
+  font-size: 1em;
+  padding: 0.3em 0 0.3em 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width:7em;
+}
+
+
+/* Responsive for Form Section */
+@media screen and (max-width: 480px){
+  .row{
+    display:block;
+  }
+  .column {
+    flex: 50%;
+    margin:1.5em;
+    margin-top: 0em;
+  }
+
+  input[type="text"]{
+    width: 20em;
+    height: 3em;
+  }
+  button[type="submit"]{
+    width:100%;
+    margin:0;
+  }
+}
+
+.reviews{
+  background-color: #8A2C2D;
+  text-align: center;
+  color:white;
+  margin:0em;
+  padding-bottom:1.5em;
+
+}
+
+h4{
+  font-size: 2em;
+  margin:0em;
+  padding:1em;
+}
+
+.reviews-box {
+  margin:0em;
+  width:100%;
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+  padding-left:20%;
+  padding-right:20%;
+}
+
+.float-child2{
+  float: left;
+  background-color: #8A2C2D;
+  width: calc(100%/10);
+  display: inline-block;
+  vertical-align: top;
+  text-align:center;
+  margin: calc(20%/8);
+}
+
+.float-child2 > p{
+  font-size: 1.2em;
+}
+
+.round{
+  border-radius: 50%;
+  width:80%
+}
+
+/* Responsive for Reviews Section */
+@media screen and (max-width: 480px){
+  .reviews-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .float-child2{
+    float: center;
+    background-color: #8A2C2D;
+    width: 50%;
+    vertical-align: top;
+    text-align:center;
+  }
+  .round{
+    border-radius: 50%;
+    width:40%
+  }
+}
+
+footer{
+  background-color: #148DB3;
+  color: white;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  margin-top:-1em;
+  height:6em;
+  line-height: 6em;
+  bottom: 0;
+
+}
